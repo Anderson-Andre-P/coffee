@@ -1,11 +1,12 @@
 import styled from "styled-components/native";
 import { TouchableOpacity } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 interface Props {
-  active: boolean;
+  isActive: boolean;
 }
 
-export const Container = styled.View``;
+export const Container = styled(GestureHandlerRootView)``;
 
 export const Categories = styled.View`
   margin-bottom: 25px;
@@ -24,21 +25,28 @@ export const Types = styled.ScrollView.attrs({
   horizontal: true,
   showsHorizontalScrollIndicator: false,
 })`
-  padding: 0 20px;
-
   flex-direction: row;
+  padding: 0 20px;
+`;
+
+export const Category = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.7,
+})<Props>`
+  background-color: ${({ isActive }) => (isActive ? "orange" : "gray")};
+  border-radius: 10px;
+  margin-right: 10px;
+  /* flex: 1; */
+  /* width: 100%; */
 `;
 
 export const Text = styled.Text`
+  height: 40px;
+  padding: 10px;
   color: #fff;
 `;
 
-export const Category = styled(TouchableOpacity).attrs({
-  activeOpacity: 0.7,
-})<Props>`
-  margin-right: 10px;
-  height: 40px;
-  background-color: ${({ active }) => (active === true ? "orange" : "gray")};
-  padding: 10px;
-  border-radius: 10px;
+export const Separator = styled.View`
+  height: 1px;
+  width: 1px;
+  background-color: red;
 `;
