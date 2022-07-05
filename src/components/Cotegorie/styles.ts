@@ -24,6 +24,7 @@ export const TitleCategory = styled.Text`
 export const Types = styled.ScrollView.attrs({
   horizontal: true,
   showsHorizontalScrollIndicator: false,
+  contentContainerStyle: { paddingRight: 24 },
 })`
   flex-direction: row;
   padding: 0 20px;
@@ -35,8 +36,9 @@ export const Category = styled.TouchableOpacity.attrs({
   background-color: ${({ isActive }) => (isActive ? "orange" : "gray")};
   border-radius: 10px;
   margin-right: 10px;
-  /* flex: 1; */
-  /* width: 100%; */
+  min-width: 90px;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Text = styled.Text`

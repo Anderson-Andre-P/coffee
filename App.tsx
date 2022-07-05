@@ -5,11 +5,7 @@ import { Home } from "./src/screens/Home";
 export default function App() {
   return (
     <>
-      <StatusBar
-        backgroundColor="transparent"
-        style="light"
-        translucent={true}
-      />
+      <StatusBar backgroundColor="transparent" translucent={true} />
       <View style={{ flex: 1 }}>
         <Home />
       </View>

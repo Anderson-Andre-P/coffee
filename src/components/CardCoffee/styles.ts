@@ -5,7 +5,7 @@ export const Container = styled.View``;
 
 export const Coffee = styled.View`
   height: auto;
-  width: 180px;
+  width: 190px;
   padding: 10px;
   background-color: gray;
   border-radius: 15px;
@@ -14,7 +14,7 @@ export const Coffee = styled.View`
 `;
 
 export const ImageCoffee = styled.Image`
-  width: 160px;
+  width: 170px;
   height: 160px;
   border-radius: 15px;
 `;

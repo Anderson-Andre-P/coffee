@@ -1,4 +1,5 @@
 import React from "react";
+import { CardInfo } from "../../components/CardInfo";
 import { ContainerCoffeeShop } from "../../components/ContainerCoffeeShop";
 import { Categorie } from "../../components/Cotegorie";
 import { Find } from "../../components/Find";
@@ -15,6 +16,8 @@ export function Home() {
       <Categorie />
 
       <ContainerCoffeeShop />
+
+      <CardInfo />
     </Container>
   );
 }
