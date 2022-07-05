@@ -6,7 +6,9 @@ interface Props {
   isActive: boolean;
 }
 
-export const Container = styled(GestureHandlerRootView)``;
+export const Container = styled(GestureHandlerRootView)`
+  background-color: ${({ theme }) => theme.colors.shape};
+`;
 
 export const Categories = styled.View`
   margin-bottom: 25px;

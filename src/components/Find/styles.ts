@@ -1,7 +1,9 @@
 import styled from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
 
-export const Container = styled.View``;
+export const Container = styled.View`
+  background-color: ${({ theme }) => theme.colors.shape};
+`;
 
 export const Title = styled.Text`
   font-size: 20px;
@@ -33,7 +35,7 @@ export const InputSearch = styled.TextInput`
 export const Filter = styled(Feather)`
   color: #fff;
   font-size: 20px;
-  background-color: orange;
+  background-color: ${({ theme }) => theme.colors.primary};
   width: 40px;
   height: 40px;
   border-radius: 5px;

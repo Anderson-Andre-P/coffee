@@ -61,7 +61,7 @@ export function Categorie() {
               key={id}
               onPress={() => handleSelectTabById(id)}
               style={{
-                backgroundColor: isActive(id) ? "orange" : "rgba(0,0,0,0.2)",
+                backgroundColor: isActive(id) ? "#92400E" : "rgba(0,0,0,0.2)",
               }}
             >
               <Text>{name}</Text>

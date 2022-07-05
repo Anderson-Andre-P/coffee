@@ -4,12 +4,13 @@ import { TouchableOpacity } from "react-native";
 export const Container = styled.View`
   flex: 1;
   padding: 20px;
+  background-color: ${({ theme }) => theme.colors.shape};
 `;
 
 export const Box = styled.View`
   flex-direction: row;
   width: 100%;
-  background-color: gray;
+  background-color: ${({ theme }) => theme.colors.shape_2};
   padding: 20px;
   border-radius: 15px;
 `;
@@ -44,7 +45,7 @@ export const Info = styled.Text`
 `;
 
 export const Button = styled.TouchableOpacity`
-  background-color: orange;
+  background-color: ${({ theme }) => theme.colors.primary};
   align-items: center;
   justify-content: center;
   width: auto;
@@ -59,7 +60,7 @@ export const Text = styled.Text`
 `;
 
 export const ContentModal = styled.View`
-  background-color: gray;
+  background-color: ${({ theme }) => theme.colors.shape_2};
   height: 100%;
   justify-content: space-between;
   padding-bottom: 20px;
@@ -82,7 +83,7 @@ export const InfoModal = styled.Text`
 `;
 
 export const ButtonModal = styled.TouchableOpacity`
-  background-color: orange;
+  background-color: ${({ theme }) => theme.colors.primary};
   align-items: center;
   justify-content: center;
   width: 30%;

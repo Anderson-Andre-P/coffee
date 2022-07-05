@@ -3,14 +3,15 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
   flex: 1;
+  background-color: ${({ theme }) => theme.colors.shape};
 `;
 
 export const Content = styled.View`
   margin: 0 20px;
   margin-bottom: 20px;
-  background-color: gray;
+  background-color: ${({ theme }) => theme.colors.shape_2};
   border-radius: 15px;
-  padding: 10px;
+  padding: 20px;
 `;
 
 export const Title = styled.Text`
@@ -38,7 +39,7 @@ export const Button = styled(TouchableOpacity).attrs({
   height: 35px;
   padding: 5px 10px;
   font-size: 14px;
-  background-color: orange;
+  background-color: ${({ theme }) => theme.colors.primary};
   border-radius: 5px;
   align-items: center;
   justify-content: center;

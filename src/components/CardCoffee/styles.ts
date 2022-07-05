@@ -7,7 +7,7 @@ export const Coffee = styled.View`
   height: auto;
   width: 190px;
   padding: 10px;
-  background-color: gray;
+  background-color: ${({ theme }) => theme.colors.shape_2};
   border-radius: 15px;
   justify-content: center;
   margin-right: 15px;
@@ -21,14 +21,14 @@ export const ImageCoffee = styled.Image`
 
 export const CoffeeName = styled.Text`
   font-size: 18px;
-  color: #fff;
+  color: ${({ theme }) => theme.colors.text};
   font-weight: bold;
   margin: 5px 0;
 `;
 
 export const Description = styled.Text`
   font-size: 12px;
-  color: #ddd;
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 export const Footer = styled.View`
@@ -38,15 +38,15 @@ export const Footer = styled.View`
 `;
 
 export const Price = styled.Text`
-  color: #fff;
+  color: ${({ theme }) => theme.colors.text};
   font-weight: 500;
   font-size: 14px;
 `;
 
 export const ButtonAdd = styled(Feather)`
   font-size: 20px;
-  color: #fff;
-  background-color: orange;
+  color: ${({ theme }) => theme.colors.text};
+  background-color: ${({ theme }) => theme.colors.shape};
   padding: 5px;
   border-radius: 15px;
 `;

@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
 
 export const Container = styled.View`
-  background-color: #333;
+  background-color: ${({ theme }) => theme.colors.shape};
   padding-top: 20px;
 `;
 
@@ -16,12 +16,12 @@ export const Header = styled.View`
 `;
 
 export const ProfileAvatar = styled.Image`
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 5px;
 `;
 
 export const Icon = styled(Feather)`
   font-size: 20px;
-  color: white;
+  color: ${({ theme }) => theme.colors.text};
 `;

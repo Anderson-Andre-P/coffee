@@ -5,7 +5,7 @@ export function Head() {
   return (
     <Container>
       <Header>
-        <ProfileAvatar source={require("../../../assets/gray.png")} />
+        <ProfileAvatar source={require("../../images/perfil.png")} />
         <Icon name="bell" />
       </Header>
     </Container>
