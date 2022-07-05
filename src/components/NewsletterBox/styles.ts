@@ -22,26 +22,28 @@ export const Title = styled.Text`
 export const Form = styled.View`
   flex: 1;
   width: 100%;
-  padding: 24px;
+  padding: 0;
   justify-content: space-between;
 `;
 
 export const Fields = styled.View`
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
 `;
 
 export const Button = styled(TouchableOpacity).attrs({
   activeOpacity: 0.7,
 })`
   width: auto;
-  /* height: 45px; */
+  height: 35px;
   padding: 5px 10px;
+  font-size: 14px;
   background-color: orange;
   border-radius: 5px;
   align-items: center;
   justify-content: center;
   margin-left: 15px;
+  margin-top: 10px;
 `;
 
 export const TextButton = styled.Text`

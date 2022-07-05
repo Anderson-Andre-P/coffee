@@ -49,13 +49,13 @@ export function NewsletterBox() {
             <InputForm
               control={control}
               name="email"
-              placeholder="Digite seu e-mail"
+              placeholder="Type your e-mail"
               autoCapitalize="none"
               autoCorrect={false}
               error={errors.name && errors.name.message}
             />
             <Button onPress={handleSubmit(handleSend)}>
-              <TextButton>Enviar</TextButton>
+              <TextButton>Send</TextButton>
             </Button>
           </Fields>
         </Form>
