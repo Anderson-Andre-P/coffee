@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { image4 } from "../../images";
 import { Modal } from "react-native";
 import {
   Container,
@@ -30,7 +31,7 @@ export function CardInfo() {
   return (
     <Container>
       <Box>
-        <Image source={require("../../../assets/gray.png")} />
+        <Image source={image4} />
         <Content>
           {/* <TextView> */}
           <Title>About Coffees</Title>
