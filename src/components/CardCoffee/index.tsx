@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Image, ImageSourcePropType } from "react-native";
 import {
   Container,
   Coffee,
   ImageCoffeeContent,
   ImageCoffee,
+  FavoriteButton,
+  Favorite,
   CoffeeName,
   Description,
   Footer,
@@ -20,12 +22,21 @@ interface Props {
 }
 
 export function CardCoffee({ src, title, description, price }: Props) {
+  const [favoriteList, setFavoriteList] = useState("#fff");
+
+  function handleSelectFavorite() {
+    setFavoriteList("#F00");
+  }
+
   return (
     <Container>
       <Coffee>
         <ImageCoffeeContent>
           <ImageCoffee source={src} />
         </ImageCoffeeContent>
+        <FavoriteButton onPress={handleSelectFavorite}>
+          <Favorite name="favorite" colors={favoriteList} />
+        </FavoriteButton>
         <CoffeeName>{title}</CoffeeName>
         <Description>{description}</Description>
         <Footer>

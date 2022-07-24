@@ -30,12 +30,12 @@ export function TabRoutes() {
       />
 
       <Screen
-        name="About"
+        name="Favorites"
         component={Home}
         options={{
-          tabBarLabel: "About",
+          tabBarLabel: "Favorites",
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name="add" color={color} size={size} />
+            <MaterialIcons name="favorite" color={color} size={size} />
           ),
         }}
       />

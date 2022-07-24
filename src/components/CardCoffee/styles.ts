@@ -1,5 +1,10 @@
 import styled from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
+
+interface Props {
+  colors: string;
+}
 
 export const Container = styled.View``;
 
@@ -22,6 +27,17 @@ export const ImageCoffeeContent = styled.View`
 `;
 
 export const ImageCoffee = styled.Image``;
+
+export const FavoriteButton = styled.TouchableOpacity`
+  position: absolute;
+  top: 16px;
+  right: 16px;
+`;
+
+export const Favorite = styled(MaterialIcons)<Props>`
+  font-size: 22px;
+  color: ${({ colors }) => colors};
+`;
 
 export const CoffeeName = styled.Text`
   font-size: 18px;
