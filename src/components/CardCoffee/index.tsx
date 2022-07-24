@@ -3,6 +3,7 @@ import { Image, ImageSourcePropType } from "react-native";
 import {
   Container,
   Coffee,
+  ImageCoffeeContent,
   ImageCoffee,
   CoffeeName,
   Description,
@@ -22,7 +23,9 @@ export function CardCoffee({ src, title, description, price }: Props) {
   return (
     <Container>
       <Coffee>
-        <ImageCoffee source={src} />
+        <ImageCoffeeContent>
+          <ImageCoffee source={src} />
+        </ImageCoffeeContent>
         <CoffeeName>{title}</CoffeeName>
         <Description>{description}</Description>
         <Footer>

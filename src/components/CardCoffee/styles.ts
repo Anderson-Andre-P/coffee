@@ -13,11 +13,15 @@ export const Coffee = styled.View`
   margin-right: 15px;
 `;
 
-export const ImageCoffee = styled.Image`
+export const ImageCoffeeContent = styled.View`
   width: 170px;
   height: 160px;
-  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 15px; */
 `;
+
+export const ImageCoffee = styled.Image``;
 
 export const CoffeeName = styled.Text`
   font-size: 18px;
