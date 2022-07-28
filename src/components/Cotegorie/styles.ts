@@ -5,6 +5,11 @@ interface Props {
   isActive: boolean;
 }
 
+export const SuperContainer = styled.View`
+  flex: 1;
+  height: 400px;
+`;
+
 export const Container = styled(GestureHandlerRootView)`
   background-color: ${({ theme }) => theme.colors.shape};
 `;
@@ -52,4 +57,8 @@ export const Separator = styled.View`
   height: 1px;
   width: 1px;
   background-color: red;
+`;
+
+export const CardsCoffee = styled.View`
+  justify-content: center;
 `;

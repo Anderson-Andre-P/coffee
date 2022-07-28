@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, TouchableOpacityProps } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import theme from "../../global/theme";
 
 import { ButtonCategory, TextButton } from "./styles";
 
@@ -16,13 +17,19 @@ export function CoffeeButton({
 }: CoffeeButtonProps) {
   return (
     <ButtonCategory style={active && styles.buttonActive} {...rest}>
-      <TextButton>{title}</TextButton>
+      <TextButton style={active && styles.textActive} {...rest}>
+        {title}
+      </TextButton>
     </ButtonCategory>
   );
 }
 
 const styles = StyleSheet.create({
   buttonActive: {
-    backgroundColor: "red",
+    backgroundColor: theme.colors.secondary,
+  },
+  textActive: {
+    color: theme.colors.text,
+    // fontWeight: "bold",
   },
 });
