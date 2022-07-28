@@ -1,0 +1,109 @@
+{
+  "coffees_ingredients": [
+    { "key": "with_milk", "title": "Com leite" },
+    { "key": "with_sugar", "title": "Com açucar" },
+    { "key": "light_roast", "title": "Torra clara" },
+    { "key": "medium_roast", "title": "Torra média" },
+    { "key": "dark_roast", "title": "Torra escura" }
+  ],
+  "coffees": [
+    {
+      "id": 1,
+      "name": "Coffee 1",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/h8FdRNN/Americano.png"
+    },
+    {
+      "id": 2,
+      "name": "Coffee 2",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/Hr8Q91r/Arabe.png"
+    },
+    {
+      "id": 3,
+      "name": "Coffee 3",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/pXGTSRX/Cafe-com-Leite.png"
+    },
+    {
+      "id": 4,
+      "name": "Coffee 4",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/RzZnVdw/Cafe-Gelado.png"
+    },
+    {
+      "id": 5,
+      "name": "Coffee 5",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/gSzWKBH/Capuccino.png"
+    },
+    {
+      "id": 6,
+      "name": "Coffee 6",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/cQ6P9vg/Chocolate-Quente.png"
+    },
+    {
+      "id": 7,
+      "name": "Coffee 7",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/L16Dn3w/Cubano.png"
+    },
+    {
+      "id": 8,
+      "name": "Coffee 8",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/Yfc1sB0/Expresso.png"
+    },
+    {
+      "id": 9,
+      "name": "Coffee 9",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/Wvkv8xF/Expresso-Cremoso.png"
+    },
+    {
+      "id": 10,
+      "name": "Coffee 10",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/f4p6MFy/Havaiano.png"
+    },
+    {
+      "id": 11,
+      "name": "Coffee 11",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/VmHBZfz/Irlandes.png"
+    },
+    {
+      "id": 12,
+      "name": "Coffee 12",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/TqT4cvC/Latte.png"
+    },
+    {
+      "id": 13,
+      "name": "Coffee 13",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/b1Qj5HH/Macchiato.png"
+    },
+    {
+      "id": 14,
+      "name": "Coffee 14",
+      "about": "Lorem Ipsum",
+      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "photo": "https://i.ibb.co/1ZKSggL/Mochaccino.png"
+    }
+  ]
+}
