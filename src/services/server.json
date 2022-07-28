@@ -1,108 +1,283 @@
 {
-  "coffees_ingredients": [
+  "coffees_types": [
     { "key": "with_milk", "title": "Com leite" },
     { "key": "with_sugar", "title": "Com açucar" },
-    { "key": "light_roast", "title": "Torra clara" },
-    { "key": "medium_roast", "title": "Torra média" },
-    { "key": "dark_roast", "title": "Torra escura" }
+    { "key": "ice_cold", "title": "Gelado" },
+    { "key": "warm", "title": "Quente" }
   ],
   "coffees": [
     {
       "id": 1,
-      "name": "Coffee 1",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Americano",
+      "about": "Uma crença popular, mas não confirmada, sobre a origem do café americano é que ele foi inventado por baristas italianos para soldados americanos durante a Segunda Guerra Mundial. Os soldados achavam o espresso normal era amargo e intenso demais, já que eram acostumados a beber café filtrado ou café \"pingado\" em casa.",
+      "types": ["warm", "ice_cold", "with_sugar"],
+      "ingredients": ["16,5g de café em pó", "230ml a 300ml de água quente"],
+      "preparation_mode": [
+        "Coloque o pó de café em um coador",
+        "Despeje a água quente sobre o coador"
+      ],
       "photo": "https://i.ibb.co/h8FdRNN/Americano.png"
     },
     {
       "id": 2,
-      "name": "Coffee 2",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Árabe",
+      "about": "O café Árabe ou Turco é um modo de preparo de café muito tradicional na Turquia, país cujo nome completo é República da Turquia. O processo de infusão do café Turco é extremamente tradicional na Turquia e estudos indicam que deva ter surgido entre os séculos XVI e XVII.",
+      "types": ["warm"],
+      "ingredients": ["Café turco", "Água quente"],
+      "preparation_mode": [
+        "Ferva o pó de café junto com a água",
+        "Espere a bebida decantar",
+        "Sirva em chávenas"
+      ],
       "photo": "https://i.ibb.co/Hr8Q91r/Arabe.png"
     },
     {
       "id": 3,
-      "name": "Coffee 3",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Café com leite",
+      "about": "O popular café com leite também é conhecido como \"pingado\", como seu próprio nome já diz ele se trata de um café comum misturado com leite e às vezes adoçado com açucar.",
+      "types": ["warm", "ice_cold", "with_sugar", "with_milk"],
+      "ingredients": [
+        "1 xícara de chá de leite",
+        "1 colher de sopa de café solúvel ou 1/4 xícara de chá de café coado",
+        "1 colher de sopa de Amido de Milho Maizena",
+        "1 colher de sopa de açúcar (opcional)"
+      ],
+      "preparation_mode": [
+        "Em uma panela, coloque o leite, o café, o amido de milho MAIZENA® e o açúcar, e misture bem",
+        "Leve ao fogo baixo, mexendo sempre, por 3 minutos, ou até ferver",
+        "Cozinhe por mais 1 minuto, retire do fogo e sirva quente"
+      ],
       "photo": "https://i.ibb.co/pXGTSRX/Cafe-com-Leite.png"
     },
     {
       "id": 4,
-      "name": "Coffee 4",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Café gelado",
+      "about": "Foram os Franceses, em meados de 1830, que desenvolveram o cold brew com a variação mais parecida com a que conhecemos hoje, consumida gelada. A bebida, chamada Mazagran, era uma mistura de concentrado de café adoçado com água gelada. Foi muito consumida pelos soldados Franceses que estavam no Forte Mazagran, na Argélia. Os soldados, ao retornarem para casa, levaram a receita que foi amplamente difundida por toda a Europa.",
+      "types": ["ice_cold", "with_sugar", "with_milk"],
+      "ingredients": [
+        "2 colheres de sopa de café solúvel",
+        "3/4 de colher de sopa de açúcar (caso queira mais doce, pode adicionar mais)",
+        "2 colheres de sopa de água fervendo",
+        "Gelo a gosto",
+        "200 ml de leite gelado",
+        "Essência de baunilha a gosto"
+      ],
+      "preparation_mode": [
+        "Reúna todos os ingredientes",
+        "Em um recipiente, adicione o café, o açúcar, a água e bata bem por 5 minutos, com um fouet, até formar um creme",
+        "Em um copo, coloque algumas pedras de gelo, o leite, a baunilha e misture",
+        "Acrescente o café cremoso e dê uma leve misturada com uma colher",
+        "Agora é só servir"
+      ],
       "photo": "https://i.ibb.co/RzZnVdw/Cafe-Gelado.png"
     },
     {
       "id": 5,
-      "name": "Coffee 5",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Capuccino",
+      "about": "Dados históricos revelam que o cappuccino surgiu em 1683, durante o desfecho de uma guerra: a libertação de Viena, na Áustria, da invasão do Império Otomano. Repelido pela força local, que lutava contra a invasão islâmica na Europa, o exército inimigo deixou na cidade sacas e mais sacas de café.",
+      "types": ["warm", "with_sugar", "with_milk"],
+      "ingredients": [
+        "500 g de leite em pó integral",
+        "50 g de café solúvel",
+        "8 colheres de sopa de chocolate em pó",
+        "1 xícara de açúca",
+        "1 colher de chá de canela em pó"
+      ],
+      "preparation_mode": [
+        "Misture no liquidificador o leite em pó e o café solúvel",
+        "Coloque a mistura em um recipiente com tampa e acrescente os outros ingredientes",
+        "Agite vigorosamente o recipiente até que a mistura esteja homogênea",
+        "Ferva 180 ml de água",
+        "Coloque a água em um copo alto (vai dobrar de volume)",
+        "Acrescente 3 colheres de sopa bem cheias de capuccino e misture bem até ficar cremoso"
+      ],
       "photo": "https://i.ibb.co/gSzWKBH/Capuccino.png"
     },
     {
       "id": 6,
-      "name": "Coffee 6",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Chocolate",
+      "about": "Não se sabe quem inventou essa receita, mas sabemos que essa mistura agrada bastante os amantes do bom cafezinho e também dos chocólatros",
+      "types": ["warm", "with_sugar", "with_milk"],
+      "ingredients": [
+        "200 g de chocolate ao leite",
+        "400 ml de café em infusão bem quente e forte",
+        "3 colheres de sopa de açúcar mascavo",
+        "3 colheres de sopa de leite em pó",
+        "1 colher de chá de especiarias em pó (canela, cravo da índia, noz-moscada e pimenta da jamaica)",
+        "Creme de leite fresco com canela em pó para acompanhar"
+      ],
+      "preparation_mode": [
+        "Faça raspas de chocolate e distribua em 4 copos",
+        "Reserve",
+        "Coloque no liquidificador o café bem quente, o açúcar mascavo, o leite em pó e as especiarias",
+        "Bata rapidamente e despeje nos copos com o chocolate",
+        "Disponha por cima da mistura o creme de leite misturado com a canela em pó",
+        "Decore com canela em pó"
+      ],
       "photo": "https://i.ibb.co/cQ6P9vg/Chocolate-Quente.png"
     },
     {
       "id": 7,
-      "name": "Coffee 7",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Cubano",
+      "about": "O café cubano nada mais é que um tipo de espresso originário de Cuba. Também chamado de espresso cubano, colada e café cubano, esse drink bem concentrado é adoçado com açúcar mascavo. A maior diferença entre este e o italiano está na infusão. Ao contrário do que acontece no preparo do Espressso italiano, no cubano o açúcar é adicionado antes do preparo do café. Sua extração é feita em uma máquina de espresso ou em um moka.",
+      "types": ["ice_cold", "with_milk"],
+      "ingredients": [
+        "60 ml de café expresso",
+        "100 ml de rum",
+        "50 ml de suco de laranja",
+        "1 colher de sopa de creme de leite fresco",
+        "Folhas de hortelã",
+        "Gelo"
+      ],
+      "preparation_mode": [
+        "Coloque tudo menos o hortelã em uma coqueteleira",
+        "Bata por aproximadamente um minuto",
+        "Decore com folhas de hortelã e sirva",
+        "Combina com biscoitos amanteigados"
+      ],
       "photo": "https://i.ibb.co/L16Dn3w/Cubano.png"
     },
     {
       "id": 8,
-      "name": "Coffee 8",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Expresso",
+      "about": "Foi criado e desenvolvido na Itália desde o início do século XX, mas até a década de 1940 era preparada sob pressão de vapor. Sua invenção é atribuída ao milanês Luigi Bezzera em 1901, mas o termo \"expresso\" (expresso) surgiu por volta de 1946 com a comercialização das máquinas do inventor Achille Gaggia e a popularização deste processo de extração do café.",
+      "types": ["ice_cold", "with_milk", "with_sugar"],
+      "ingredients": [
+        "50 g de café solúvel",
+        "2 xícaras de açúcar refinado",
+        "1 xícara de agua filtrada",
+        "Leite"
+      ],
+      "preparation_mode": [
+        "Coloque o café, o açúcar e a água em uma batedeira, bata por 7 minutos",
+        "Formará um creme parecido com sorvete",
+        "Para servir, aqueça uma xícara de leite, adicione 1 colher de sopa generosa do creme e mexa até dissolver",
+        "Se preferir, polvilhe com canela"
+      ],
       "photo": "https://i.ibb.co/Yfc1sB0/Expresso.png"
     },
     {
       "id": 9,
-      "name": "Coffee 9",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Expresso cremoso",
+      "about": "O café expresso é uma grande paixão brasileira, seja para saborear sozinho antes de ir para o trabalho, seja para tomá-lo junto à família ou com amigos. Independentemente do caso, esse tipo de café chamado café expresso é muito querido no país inteiro. Entretanto, embora seja muito consumido por aqui, a sua origem é italiana, onde ele é chamado de caffè espresso.",
+      "types": ["warm", "with_sugar"],
+      "ingredients": [
+        "50 g de café solúvel",
+        "2 xícaras de chá de açúcar refinado",
+        "1 pitada de canéla em pó (opcional)",
+        "1 xícara de agua  (fervente)"
+      ],
+      "preparation_mode": [
+        "Na batedeira, coloque o café, o açúcar e a canela",
+        "Misture bem",
+        "Em seguida adicione a água quente",
+        "Bata tudo por cerca de 10 minutos ou até que fique bem volumoso e liso",
+        "Na hora de usar, basta adicionar 2 colheres de sopa numa xícara, adicionar o leite quente e misturar"
+      ],
       "photo": "https://i.ibb.co/Wvkv8xF/Expresso-Cremoso.png"
     },
     {
       "id": 10,
-      "name": "Coffee 10",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Havaiano",
+      "about": "O café havaiano é uma bebida que leva, entre outras coisas, leite de coco, manteiga e coco ralado. Apesar de servido quente, é uma bebida muito apreciada nos dias de calor. E mesmo com esse nome, não sabemos se é uma receita havaiana.",
+      "types": ["warm", "with_sugar", "with_milk"],
+      "ingredients": [
+        "Uma xícara de café coado",
+        "1/2 xícara de leite integral",
+        "1/2 xícara de leite de coco",
+        "Óleo de coco",
+        "Açúcar ou adoçante a gosto",
+        "Coco queimado ou fresco a gosto"
+      ],
+      "preparation_mode": [
+        "Em uma panela, ferva o leite de coco com o leite integral. Em seguida, junte essa mistura com o café.",
+        "Adoce com o açúcar ou adoçante que você escolheu e misture",
+        "Na xícara que você escolheu, passe óleo de coco nas bordas",
+        "Despeje o coco queimado ou fresco em um prato e mergulhe a borda da xícara neste recipiente até que o item grude bem no copo",
+        "Despeje o café nessa xícara e sirva logo em seguida"
+      ],
       "photo": "https://i.ibb.co/f4p6MFy/Havaiano.png"
     },
     {
       "id": 11,
-      "name": "Coffee 11",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Irlandês",
+      "about": "A bebida foi inventada no porto de Foynes por seu chef Joseph Sheridan na década de 1940 (Foynes foi o precursor do aeroporto de Shannon no oeste da Irlanda). A bebida servia para aquecer os passageiros dos flying boats que chegavam da América do Norte pelo Atlântico.",
+      "types": ["warm", "with_sugar"],
+      "ingredients": [
+        "3/4 a 1 xícara de chá de café forte preparado",
+        "1 cálice de uísque",
+        "1 colher de chá de açúcar",
+        "1 colher de sopa de creme de chantilly"
+      ],
+      "preparation_mode": [
+        "Misturar o café, o uísque e o açúcar em uma caneca ou copo",
+        "Levar ao microondas por 1 a 2 minutos na potência alta, para aquecer",
+        "Acrescentar o chantilly"
+      ],
       "photo": "https://i.ibb.co/VmHBZfz/Irlandes.png"
     },
     {
       "id": 12,
-      "name": "Coffee 12",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Latte",
+      "about": "De origem italiana, a palavra latte quer dizer, literalmente, leite e é usado para definir, de forma geral, todas as bebidas de café que levam leite em sua composição. Na Itália, ele é conhecido como caffè latte ou latte macchiato. No Brasil, nós o chamamos de café latte. Já em Portugal é denominado como galão.",
+      "types": ["warm", "ice_cold", "with_sugar", "with_milk"],
+      "ingredients": [
+        "200 ml de água fervendo",
+        "200 ml de leite",
+        "Café solúvel extra forte da sua preferência",
+        "Açúcar a gosto",
+        "Calda de chocolate (opcional)"
+      ],
+      "preparation_mode": [
+        "Prepare o café na xícara que você irá servir, mas certifique-se que ele ocupe apenas 1/3 do recipiente",
+        "Adoce a gosto e reserve",
+        "Agora, esquente o leite até um ponto antes de ferver, que é quando começa a aparecer bolhas em volta da leiteira",
+        "Leve o leite para uma prensa francesa ou uma garrafa pet de 600 mililitros, tampe e agite bem por cerca de três minutos",
+        "Em seguida, coloque o item em cima de uma superfície plana e deixe descansar por 30 segundos",
+        "Depois disso, sirva no copo, inclinando a garrafa de um modo a fazer apenas o leite cair, deixando a espuma por último",
+        "Por fim, despeje a espuma e use a calda de chocolate para decorar o topo bebida do jeito que desejar"
+      ],
       "photo": "https://i.ibb.co/TqT4cvC/Latte.png"
     },
     {
       "id": 13,
-      "name": "Coffee 13",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Macchiato",
+      "about": "Em italiano, macchiato significa “manchado”. O nome surgiu para que os baristas conseguissem explicar a diferença entre um espresso tradicional e o que leva um pouco de leite. Por isso, o espresso com uma pequena dose de leite é conhecido atualmente como café macchiato.",
+      "types": ["warm", "with_sugar", "with_milk"],
+      "ingredients": [
+        "1 colher de sopa de leite condensado",
+        "1 copo de leite líquido integral",
+        "1 xícara de café espresso"
+      ],
+      "preparation_mode": [
+        "Encha o copo com 2/3 de leite",
+        "Leve ao micro-ondas para aquecer bem",
+        "Junte o leite condensado de uma vez só, para ele ir para a base",
+        "Junte o expresso (deixe correr ao longo do copo, com cuidado, para não haver mistura)",
+        "Com o mixer, bata o leite, durante 1 minuto, até ficar em espuma densa",
+        "Coloque um pouco sobre o café"
+      ],
       "photo": "https://i.ibb.co/b1Qj5HH/Macchiato.png"
     },
     {
       "id": 14,
-      "name": "Coffee 14",
-      "about": "Lorem Ipsum",
-      "ingredients": ["ingrediente 1", "ingrediente 2"],
+      "name": "Mocaccino",
+      "about": "Embora não se saiba precisar onde ou quando exatamente surgiu o café mocha, é inegável que seu nome está diretamente ligado à história do café. Afinal, a bebida é homônima da cidade de Mocha, localizada no Iêmen na costa do Mar Vermelho. No século XV, a cidade portuária conquistou grande fama como exportadora de cafés.",
+      "types": ["warm", "with_sugar", "with_milk"],
+      "ingredients": [
+        "2 colheres de leite em pó",
+        "2 colheres de chocolate em pó",
+        "2 quadradinhos de chocolate meio amargo",
+        "1 colher de café torrado e moido",
+        "2 copos de agua"
+      ],
+      "preparation_mode": [
+        "Coloque a agua na cafeteira",
+        "Misture o café, o leite em pó e o chocolate em pó",
+        "Coloque na cafeteira (no filtro) os 2 pedaços de chocolate e encima os outros ingredientes",
+        "Ligue a cafeteira",
+        "Quando a cafeteira tiver pela metade do processo desligue e mexa para desempleotar o leite em pó, depois ligue e deixe terminar"
+      ],
       "photo": "https://i.ibb.co/1ZKSggL/Mochaccino.png"
     }
   ]
