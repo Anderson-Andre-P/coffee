@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import api from "../../services/api";
+import { FlatList } from "react-native";
 import {
   TypeAmericano,
   TypeIrlandes,
@@ -26,33 +28,94 @@ import {
   Category,
   Text,
 } from "./styles";
+import { CoffeeButton } from "../CoffeeButton";
+
+interface TypesProps {
+  key: string;
+  title: string;
+}
+
+interface CoffeeProps {
+  id: string;
+  name: string;
+  about: string;
+  types: [string];
+  ingredients: [string];
+  preparation_mode: [string];
+  photo: string;
+}
 
 export function Categorie() {
-  const [active, setActive] = useState(false);
+  // const [active, setActive] = useState(false);
 
-  const coffees = [
-    { id: 1, name: "All" },
-    { id: 2, name: "Americano" },
-    { id: 3, name: "Express" },
-    { id: 4, name: "With Milk" },
-    { id: 5, name: "Abroad" },
-  ];
+  // const coffees = [
+  //   { id: 1, name: "All" },
+  //   { id: 2, name: "Americano" },
+  //   { id: 3, name: "Express" },
+  //   { id: 4, name: "With Milk" },
+  //   { id: 5, name: "Abroad" },
+  // ];
 
-  const [selectedTab, setSelectedTab] = useState(coffees[0].id);
-  const [selectedTabContent, setSelectedTabContent] = useState(1);
+  // const [selectedTab, setSelectedTab] = useState(coffees[0].id);
+  // const [selectedTabContent, setSelectedTabContent] = useState(1);
 
-  const isActive = (id: number) => id === selectedTab;
+  // const isActive = (id: number) => id === selectedTab;
 
-  const handleSelectTabById = (id: number) => {
-    setSelectedTab(id);
-    setSelectedTabContent(id);
-  };
+  // const handleSelectTabById = (id: number) => {
+  //   setSelectedTab(id);
+  //   setSelectedTabContent(id);
+  // };
+
+  const [types, setTypes] = useState<TypesProps[]>([]);
+  const [coffee, setCoffee] = useState<CoffeeProps[]>([]);
+  const [filteredCoffee, setFilteredCoffee] = useState<CoffeeProps[]>([]);
+  const [typeSelected, setTypeSelected] = useState("all");
+
+  async function fetchCoffee() {
+    const { data } = await api.get(`coffees?_sort=name&_order=asc`);
+  }
+
+  function handleCoffeeSelected(coffee: string) {
+    // set
+  }
+
+  useEffect(() => {
+    async function fetchCoffee() {
+      const { data } = await api.get("coffees_types?_sort=title&_order=asc");
+      setTypes([
+        {
+          key: "all",
+          title: "Todos",
+        },
+        ...data,
+      ]);
+    }
+
+    fetchCoffee();
+  }, []);
+
+  useEffect(() => {
+    fetchCoffee();
+  }, []);
 
   return (
     <Container>
       <TitleCategory>Categories</TitleCategory>
       <Categories>
-        <Types>
+        <FlatList
+          data={types}
+          renderItem={({ item }) => (
+            <CoffeeButton
+              title={item.title}
+              active={item.key === typeSelected}
+              onPress={() => handleCoffeeSelected(item.key)}
+            />
+          )}
+          horizontal
+          showsHorizontalScrollIndicator={false}
+        />
+
+        {/* <Types>
           {coffees.map(({ id, name }) => (
             <Category
               isActive={active}
@@ -65,9 +128,9 @@ export function Categorie() {
               <Text>{name}</Text>
             </Category>
           ))}
-        </Types>
+        </Types> */}
 
-        {selectedTabContent === 1 && (
+        {/* {selectedTabContent === 1 && (
           <Shop>
             <CardCoffee
               src={TypeAmericano}
@@ -270,7 +333,7 @@ export function Categorie() {
               price="$5.98"
             />
           </Shop>
-        )}
+        )} */}
       </Categories>
     </Container>
   );
