@@ -7,7 +7,8 @@ interface Props {
 
 export const SuperContainer = styled.View`
   flex: 1;
-  height: 400px;
+  height: auto;
+  background-color: ${({ theme }) => theme.colors.shape};
 `;
 
 export const Container = styled(GestureHandlerRootView)`
@@ -15,7 +16,7 @@ export const Container = styled(GestureHandlerRootView)`
 `;
 
 export const Categories = styled.View`
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 `;
 
 export const TitleCategory = styled.Text`

@@ -26,7 +26,7 @@ export function CoffeeButton({
 
 const styles = StyleSheet.create({
   buttonActive: {
-    backgroundColor: theme.colors.secondary,
+    backgroundColor: theme.colors.primary,
   },
   textActive: {
     color: theme.colors.text,
